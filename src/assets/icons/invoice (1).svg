@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.965" height="32.8" viewBox="0 0 24.965 32.8">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#25408f"/>
+      <stop offset="0.187" stop-color="#25408f"/>
+      <stop offset="0.231" stop-color="#f2ae1b"/>
+      <stop offset="0.274" stop-color="#25408f"/>
+      <stop offset="1" stop-color="#0f0057"/>
+    </linearGradient>
+  </defs>
+  <g id="invoice_1_" data-name="invoice (1)" transform="translate(-50.526)">
+    <g id="Group_342" data-name="Group 342" transform="translate(50.526)">
+      <path id="Path_1626" data-name="Path 1626" d="M74.677.843a1.373,1.373,0,0,0-1.494.227L71.031,2.975a.154.154,0,0,1-.205,0L67.9.356a1.394,1.394,0,0,0-1.861,0L63.112,2.972a.155.155,0,0,1-.207,0L59.98.356a1.394,1.394,0,0,0-1.861,0L55.191,2.975a.155.155,0,0,1-.206,0L52.831,1.07a1.385,1.385,0,0,0-2.3,1.045v28.57a1.387,1.387,0,0,0,2.308,1.045l2.152-1.905a.154.154,0,0,1,.205,0l2.928,2.619a1.394,1.394,0,0,0,1.861,0l2.926-2.616a.155.155,0,0,1,.207,0l2.926,2.616a1.4,1.4,0,0,0,1.861,0l2.928-2.619a.155.155,0,0,1,.206,0l2.154,1.905a1.385,1.385,0,0,0,2.3-1.045V2.115A1.373,1.373,0,0,0,74.677.843ZM55.66,11.128h7.721a.62.62,0,1,1,0,1.24H55.66a.62.62,0,0,1,0-1.24Zm14.7,10.544H55.66a.62.62,0,0,1,0-1.24h14.7a.62.62,0,0,1,0,1.24Zm0-4.652H55.66a.62.62,0,0,1,0-1.24h14.7a.62.62,0,0,1,0,1.24Z" transform="translate(-50.526 0)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

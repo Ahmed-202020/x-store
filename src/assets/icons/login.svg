@@ -1,0 +1,17 @@
+<svg id="login" xmlns="http://www.w3.org/2000/svg" width="56.871" height="57.782" viewBox="0 0 56.871 57.782">
+  <circle id="Ellipse_127" data-name="Ellipse 127" cx="27" cy="27" r="27" transform="translate(0 3.782)" fill="#d3dcf8"/>
+  <g id="Group_7861" data-name="Group 7861" transform="translate(0.002)">
+    <path id="Path_4108" data-name="Path 4108" d="M113.778,247.349a20.834,20.834,0,0,1,41.667,0Z" transform="translate(-113.778 -205.027)" fill="#113bb6"/>
+    <path id="Path_4109" data-name="Path 4109" d="M220.086,226.557v20.824H240.6A20.829,20.829,0,0,0,220.086,226.557Z" transform="translate(-198.928 -205.059)" fill="#25408f"/>
+    <ellipse id="Ellipse_128" data-name="Ellipse 128" cx="9.385" cy="9.384" rx="9.385" ry="9.384" transform="translate(11.786 0.001)" fill="#113bb6"/>
+    <path id="Path_4110" data-name="Path 4110" d="M220.1,118.519h-.015v18.767h.015a9.384,9.384,0,1,0,0-18.768Z" transform="translate(-198.928 -118.519)" fill="#25408f"/>
+    <path id="Path_4111" data-name="Path 4111" d="M301.665,201.5h-3.087V185.473a6.471,6.471,0,0,0-12.941,0V201.5h-3.087V185.473a9.558,9.558,0,0,1,19.116,0Z" transform="translate(-248.964 -164.494)" fill="#fff"/>
+    <path id="Path_4112" data-name="Path 4112" d="M330.449,175.914h-.033V179l.033,0a6.478,6.478,0,0,1,6.47,6.47V201.5h3.087V185.471A9.568,9.568,0,0,0,330.449,175.914Z" transform="translate(-287.3 -164.493)" fill="#d0d1d3"/>
+    <path id="Path_4113" data-name="Path 4113" d="M286.641,279.97H264.049a2.426,2.426,0,0,1-2.426-2.426V259.527a2.426,2.426,0,0,1,2.426-2.426h22.592a2.426,2.426,0,0,1,2.426,2.426v18.018A2.426,2.426,0,0,1,286.641,279.97Z" transform="translate(-232.197 -229.526)" fill="#f2ae1b"/>
+    <g id="Group_7860" data-name="Group 7860" transform="translate(39.885 27.575)">
+      <path id="Path_4114" data-name="Path 4114" d="M341.745,257.1H330.416v22.868h11.329a2.426,2.426,0,0,0,2.426-2.426V259.528A2.426,2.426,0,0,0,341.745,257.1Z" transform="translate(-327.19 -257.103)" fill="#d89402"/>
+      <path id="Path_4115" data-name="Path 4115" d="M320.722,291.06a3.259,3.259,0,1,0-4.888,2.819v3.649a1.63,1.63,0,0,0,3.259,0v-3.649A3.256,3.256,0,0,0,320.722,291.06Z" transform="translate(-314.204 -281.693)" fill="#d89402"/>
+    </g>
+    <path id="Path_4116" data-name="Path 4116" d="M330.449,287.8l-.033,0v11.351c.011,0,.022,0,.033,0a1.63,1.63,0,0,0,1.629-1.629v-3.649a3.257,3.257,0,0,0-1.629-6.078Z" transform="translate(-287.3 -254.118)" fill="#ff5419"/>
+  </g>
+</svg>

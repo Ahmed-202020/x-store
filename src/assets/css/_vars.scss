@@ -1,0 +1,96 @@
+// color
+$bg-color : #d3dcf8 ; 
+$white : #ffffff ; 
+$btn-color-1 : #f2ae1b ; 
+$btn-color-2 : #d89402 ; 
+$main-color : #25408f ; 
+$icon-color : #0f0057 ;
+$icon-color-2 : #b0b7cc ;
+$light-line: #f3f6ff ; 
+$black: #000 ; 
+
+//font
+
+@font-face{
+    font-family: Tajawal;
+    src : url("../fonts/Tajawal/Tajawal-Regular.ttf") ; 
+}
+body{
+    font-family: Tajawal , sans-serif !important;
+    background-color: $white !important;
+    font-size: 16pt !important;
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+}
+
+// classes
+%drop{
+    position: relative;
+    .text-lang{
+        color: $main-color;
+    }
+    .dropdown-menu{
+        top: 33px;
+        position: absolute;
+        min-width: 11rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        text-align: center;
+        font-size: 16pt;
+        border: none;
+        box-shadow:  0 0 5px  $icon-color-2;
+    }
+    .dropdown-item{
+        text-align: center;
+        font-size: 16pt;
+        padding-block: 15px;
+        margin-top: 10px;
+        color: $main-color;
+        width: 92%;
+        margin-inline: auto;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        &:hover{
+            background-color: $light-line;
+        }
+    }
+    .drop-1{
+        position: relative;
+        margin-bottom: 30px;
+        &::after{
+            position: absolute;
+            top: 78px;
+            left: 16px;
+            content: "";
+            background-color: $bg-color ; 
+            width: 80%;
+            height: 1px;
+        }
+    }
+}
+%title{
+    position: relative;
+    font-size: 25pt;
+    font-weight: bold;
+    color: $main-color;
+    margin-bottom: 50px;
+    &::after{
+        position: absolute;
+        content: "";
+        background-color: $bg-color;
+        height: 1px;
+        width: 85%;
+        bottom: 12px;
+        right: 9%;
+    }
+}
