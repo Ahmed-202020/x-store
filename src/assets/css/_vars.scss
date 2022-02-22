@@ -15,6 +15,9 @@ $black: #000 ;
     font-family: Tajawal;
     src : url("../fonts/Tajawal/Tajawal-Regular.ttf") ; 
 }
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: Tajawal , sans-serif !important;
     background-color: $white !important;
