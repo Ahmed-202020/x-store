@@ -1,0 +1,10 @@
+@import "./vars" ;
+.t-c.about-us{
+    .branch{
+        a + a{
+            &::after{
+                left: 74px ;
+            }
+        }
+    }
+}

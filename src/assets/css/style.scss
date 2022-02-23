@@ -1,3 +1,7 @@
+@import "./t_c" ; 
+@import "./about-us" ; 
+@import "./errors" ; 
+@import "./login" ; 
 @import "./vars";
 .header{
     .info{
@@ -169,17 +173,47 @@
         }
     }
 }
-.about-us{
-    padding: 100px 50px;
-    .title{
-        @extend %title ; 
-    }
-    .text{
-        color: $main-color;
-        width: 750px;
-        text-align: center;
-        margin: auto;
-        font-size: 18pt;
+.features{
+    padding: 150px 100px 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(calc(100% / 3) , 1fr));
+    align-items: center;
+    justify-content: center;
+    .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .image{
+            background-color: $light-line;
+            border: 1px solid $bg-color;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            img{
+                width: 65%;
+            }
+        }
+        .title{
+            color: $main-color;
+            font-size: 15pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .text{
+            color: $feature-color;
+            font-size: 12pt;
+            padding-inline: 10px;
+            padding-inline: 125px;
+            text-align: center;
+        }
     }
 }
 .sections{
@@ -431,7 +465,7 @@
     top: 0;
     left: 0;
     .row{
-        padding: 100px ;
+        padding: 100px 100px 200px 100px ;
         .logo{
             width: 200px;
             margin-bottom: 30px;
@@ -447,7 +481,7 @@
         }
         .items{
             list-style: none;
-            margin-top: 20px;
+            margin-top: 30px;
             .item{
                 .link{
                     text-decoration: none;
@@ -465,7 +499,7 @@
                 }
             }
             .item + .item{
-                margin-top: 30pt;
+                margin-top: 22pt;
             }
             .custom-item{
                 span{

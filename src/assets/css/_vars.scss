@@ -6,6 +6,7 @@ $btn-color-2 : #d89402 ;
 $main-color : #25408f ; 
 $icon-color : #0f0057 ;
 $icon-color-2 : #b0b7cc ;
+$feature-color : #90a1d5 ; 
 $light-line: #f3f6ff ; 
 $black: #000 ; 
 
@@ -31,6 +32,21 @@ body{
 }
 
 // classes
+.header{
+    .navbar{
+        .navbar-collapse{
+            .sub-nav{
+                .nav-item.active{
+                    .nav-link{
+                        color: $btn-color-1 ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//extends
 %drop{
     position: relative;
     .text-lang{
@@ -96,4 +112,16 @@ body{
         bottom: 12px;
         right: 9%;
     }
+}
+%show-case{
+    background-color: $white;
+    box-shadow: 0 0 5px $bg-color;
+    width: 950px;
+    padding: 100px 0 100px 80px;
+    margin: auto;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }

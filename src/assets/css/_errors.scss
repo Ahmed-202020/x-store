@@ -1,0 +1,25 @@
+@import "./vars" ;
+.errors{
+    background-color: $light-line;
+    padding: 100px 100px 200px 100px;
+    .show-case{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .alert{
+            color: $main-color;
+            font-weight: bold;
+            padding-left: 0;
+            padding-right: 5rem;
+            font-size: 18pt;
+            margin-bottom: 30px;
+        }
+        .image{
+            width:380px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
