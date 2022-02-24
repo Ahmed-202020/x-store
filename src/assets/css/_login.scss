@@ -1,6 +1,10 @@
 @import "./vars" ; 
 .signin{
     background-color: $light-line;
+    background-image: url("../img/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 70px;
     .show-case{
         @extend  %show-case ; 
@@ -39,6 +43,8 @@
                 display: flex;
                 align-items: center;
                 margin-top: 1px;
+                color: $icon-color;
+                font-weight: bold;
                 .entery-code{
                     color: $icon-color;
                     font-weight: bold;

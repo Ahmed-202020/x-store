@@ -2,7 +2,11 @@
 @import "./about-us" ; 
 @import "./errors" ; 
 @import "./login" ; 
-@import "./vars";
+@import "./create-account" ;
+@import "./change-password" ; 
+@import "./otp" ; 
+@import "./new-password" ; 
+@import "./vars" ;
 .header{
     .info{
         padding-inline: 100px;

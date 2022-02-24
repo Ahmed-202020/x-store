@@ -8,6 +8,7 @@ $(function(){
         $("html").attr("dir" , "rtl") ;
     }) ; 
 
+
     $('.owl-carousel').owlCarousel({
         // loop: true,
         rtl:true,

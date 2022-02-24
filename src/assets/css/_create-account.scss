@@ -1,0 +1,74 @@
+@import "./vars" ; 
+.signin.signup{
+    .show-case{
+        .title{
+            .alert{
+                margin-right: 0 ;
+            }
+        }
+        .form-group{
+            .form-control{
+                text-align: right ;
+                &:first-of-type{
+                    padding-right: 30px ;
+                }
+                &:nth-of-type(2){
+                    padding-right: 140px ;
+                }
+            }
+            .flag{
+                top: 15%;
+            }
+            .info{
+                top: 15%;
+            }
+            .buttons{
+                margin-top: 80px;
+                .no-account{
+                    font-size: 14pt !important;
+                }
+                .btn + .btn{
+                    margin-top: 8px;
+                }
+            }
+            label{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                input[type = "checkbox"]{
+                    display: none;
+                    &+ span::after{
+                        position: absolute;
+                        content: "";
+                        width: 22px;
+                        height: 22px;
+                        line-height: 22px;
+                        border: 1px solid $icon-color;
+                        top: 0;
+                        right: -30px;
+                        background-color: $white;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &:checked + span::after{
+                        content: "\2714";
+                        font-size: 14pt;
+                    }
+                }
+                span{
+                    position: relative;
+                    color: $main-color;
+                    font-size: 11pt;
+                    margin-right:32px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
