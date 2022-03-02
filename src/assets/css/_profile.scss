@@ -1,0 +1,54 @@
+@import "./vars" ;
+
+.t-c.profile{
+    padding-bottom: 150px;
+    .branch{
+        a + a{
+            &::after{
+                left: 69px;
+            }
+        }
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        a{
+            background-image: linear-gradient($white , $icon-color-2);
+            display: flex;
+            align-items: center;
+            color: $main-color;
+            font-weight: 800;
+            font-size: 25px;
+            padding-inline: 30px;
+            width: 30%;
+            min-height: 130px;
+            max-height: 130px;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            transition: all 300ms ease;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            span{
+                margin-right: 10px;
+                margin-bottom: 20px;
+            }
+            &:hover{
+                filter: brightness(90%);
+                -webkit-filter: brightness(100%);
+                transform: scale(95%);
+                -webkit-transform: scale(95%);
+                -moz-transform: scale(95%);
+                -ms-transform: scale(95%);
+                -o-transform: scale(95%);
+            }
+        }
+        a+a{
+            margin-right: 25%;
+        }
+    }
+}

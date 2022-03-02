@@ -6,6 +6,13 @@
 @import "./change-password" ; 
 @import "./otp" ; 
 @import "./new-password" ; 
+@import "./profile" ; 
+@import "./info" ; 
+@import "./orders" ; 
+@import "./process-orders" ;
+@import "./cart" ;
+@import "./products" ;
+@import "./info-product" ; 
 @import "./vars" ;
 .header{
     .info{
@@ -35,7 +42,7 @@
                 padding-inline: 70px;
                 height: 90px;
                 display: grid;
-                grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+                grid-template-columns: repeat(auto-fill , minmax(calc(100% / 3) , 1fr));
                 align-items: baseline;
                 .lang{
                     text-align: right;
@@ -57,7 +64,8 @@
                     margin-right: 15px;
                     text-align: center;
                     img{
-                        width: 50%;
+                        width: 55%;
+                        height: 80px;
                     }
                 }
                 .others{
@@ -215,7 +223,7 @@
             color: $feature-color;
             font-size: 12pt;
             padding-inline: 10px;
-            padding-inline: 125px;
+            padding-inline: 130px;
             text-align: center;
         }
     }
@@ -553,4 +561,57 @@
             margin-inline: 10px;
         }
     }
+}
+#notifications{
+    padding-left: 0 !important;
+    .modal-dialog{
+        margin-left: 50px ;
+        margin-top: 50px;
+        max-width: 50%;
+    }
+}
+.modal-content{
+    background-color: $white;
+    padding: 50px 60px 0 0;
+    height: 250px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 5px $icon-color-2;
+    border: none !important;
+    .sub{
+        color: $main-color;
+        font-size: 15pt;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    .btn{
+        background-image: linear-gradient($btn-color-1 , $btn-color-2);
+        color: $white;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        width: 90px;
+        padding: 5px 10px;
+        font-size: 18pt;
+        &:focus{
+            box-shadow: none;
+        }
+        &:hover{
+            color: $white;
+            filter: brightness(95%);
+            -webkit-filter: brightness(95%);
+        }
+    }
+    .btn:last-child{
+        margin-right: 15px;
+        background-image: linear-gradient($main-color , $icon-color);
+    }
+}
+.modal-open{
+    padding: 0 !important;
 }

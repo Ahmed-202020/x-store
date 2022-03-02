@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir = "rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+        <title>x-store</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="info">
+                <div class="email">
+                    <span>info@tawajood.com</span>
+                    <img src="./assets/icons/Icon zocial-email.svg"  alt="email"/>
+                </div>
+                <div class="phone">
+                    <span>201024848723+</span>
+                    <img src="./assets/icons/Icon feather-phone-call.svg"  alt="phone"/>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="min-nav">
+                            <div class="lang">
+                                <div class="dropdown">
+                                    <a class="nav-link text-lang dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        العربية
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item drop-1 ar" href="#">العربية</a></li>
+                                        <li><a class="dropdown-item en" href="#">English</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-brand">
+                                <a href="./index.html"><img src="./assets/logo/Group 40925.png" alt="logo"></a>
+                            </div>
+                            <div class="others">
+                                <div class="login">
+                                    <div class="dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/icons/user.svg" alt="login">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item drop-1" href="./login.html">تسجيل الدخول</a></li>
+                                            <li><a class="dropdown-item" href="./create-account.html">مستخدم جديد</a></li>
+                                            <li><a class="dropdown-item drop-1" href="./profile.html">حسابي</a></li>
+                                            <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <a  href="./cart.html">
+                                        <img src="./assets/icons/out-of-the-cart-e-commerce-interface-symbol-1.svg" alt="filter">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="sub-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html#sections">الاقسام الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about-us.html">من نحن</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html#best-seller">الأكثر مبيعا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section id="products">
+            <div class="branch">
+                <a href="./index.html">الرئيسية</a>
+                <a href="./products.html">أجهزة الكمبيوتر وملحقاتها</a>
+            </div>
+            <ul class="min-nav">
+                <li onclick="openMenu('computers')" class="nav-item min-active">
+                    <a class="nav-link"> أجهزة الكمبيوتر وملحقاتها</a>
+                </li>
+                <li class="nav-item" onclick="openMenu('mobiles')" >
+                    <a  class="nav-link">الموبيلات وأجهزة التابلت والاكسسوارات</a>     
+                </li>
+                <li class="nav-item" onclick="openMenu(' televisions')" >
+                    <a  class="nav-link">  التلفزيونات والالكترونيات</a>
+                </li>
+            </ul>
+            <ul class="sub-nav">
+                <li class="nav-item sub-active">
+                    <a  class="nav-link">اتش بى</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">ابل</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link">اكسسوارات</a>
+                </li>
+            </ul>
+            <div id="computers" class="products  default">
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/2.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/pro1.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/2.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/3.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/3.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/1.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="mobiles" class="products ">
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/sa1.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/sa1.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/sa1.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/sa1.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/sa1.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/sa1.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id=" televisions" class="products">
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/television.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/television.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/television.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/television.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/television.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="product-details"  href="./info-product.html">
+                    <div class="show-case">
+                        <div class="image">
+                            <img src="./assets/img/television.png" alt="product">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                لاب توب فائق الخفة 2022، معالج حتى 2.8.2 جيجا هرتز N4020 انتل ذاكرة رام 4 جيجا بايت
+                            </div>
+                            <div class="price">د.ك 110</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="logo">
+                        <img src="./assets/logo/Group 7652-1@3x.png" alt="logo">
+                    </div>
+                    <div class="explanation">
+                        <p class="text">موقع لبيع المنتجات الالكترونية والأجهزة بأحدث المنتجات والأقسام وبأسعار مميزة وخدمة ممتازة، كى نضمن لكم جودة المنتج والسعر</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 order-3 order-sm-2  d-flex flex-column justify-content-center align-items-start">
+                    <ul class="items">
+                        <li class="item">
+                            <a href="./about-us.html" class="link">من نحن</a>
+                        </li>
+                        <li class="item">
+                            <a href="./index.html#sections" class="link">الاقسام الرئيسية</a>
+                        </li>
+                        <li class="item">
+                            <a href="./index.html#best-seller" class="link">الأكثر مبيعا</a>
+                        </li>
+                        <li class="item">
+                            <a href="./t_c.html" class="link">الشروط والاحكام</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 order-2 order-sm-3">
+                    <div class="contact">
+                        <div class="title"> تواصل معنا  </div>
+                        <ul class="items custom-items">
+                            <li class="item custom-item">
+                                <span>info@tawajood.com</span>
+                                <img src="./assets/icons/Icon zocial-email.svg" alt="email">
+                            </li>
+                            <li class="item custom-item">
+                                <span>201024848723+</span>
+                                <img src="./assets/icons/Icon feather-phone-call-1.svg" alt="phone">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">
+                </span class = "text">x-store.com ,inc </span>
+                <span class="year">2020</span>
+                <span class="copy">©</span> 
+            </p>
+        </footer>
+    </body>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</html>

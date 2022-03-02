@@ -1,0 +1,176 @@
+@import "./vars" ;
+
+.orders{
+    background-color: $light-line;
+    padding: 30px  70px 100px;
+    .branch{
+        @extend %branch ; 
+        a + a{
+            &::after{
+                left: 69px !important; 
+            }
+        }
+        .bar{
+            &::after{
+                left: 67px !important;
+            }
+        }
+    }
+    .show-case{
+        padding: 70px 60px 250px;
+        background-color: $white;
+        border: 1px solid $bg-color;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        .title{
+            display: flex;
+            align-items: center;
+            color: $main-color;
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 70px;
+            .title-curr{
+                margin-left: 50px;
+                font-weight: bold;
+                position: relative;
+            }
+            .title-finish{
+                position: relative;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 93%;
+                height: 4px;
+                background-color: $light-line;
+                bottom: -20px;
+                right: -20px;
+            }
+        }
+        .current-orders{
+            display: block;
+            margin-bottom: 50px;
+            background-color: $light-line;
+            width: 83%;
+            padding: 50px;
+            border: 1px solid $bg-color;
+            border-radius: 60px;
+            -webkit-border-radius: 60px;
+            -moz-border-radius: 60px;
+            -ms-border-radius: 60px;
+            -o-border-radius: 60px;
+            .info{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                .num-order{
+                    .tit{
+                        color: $main-color;
+                        font-weight: 800;
+                        font-size: 16pt;
+                        margin-left: 8px;
+                    }
+                    .sub{
+                        color: $main-color;
+                    }
+                }
+                .quantity{
+                    color: $main-color;
+                    font-size: 14pt;
+                    font-weight: 800;
+                    width: 80px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    background-color: $btn-color-1;
+                    border-radius: 25px;
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    -ms-border-radius: 25px;
+                    -o-border-radius: 25px;
+                }
+            }
+            .order-date{
+                margin-bottom: 70px;
+                .tit{
+                    color: $main-color;
+                    font-weight: 800;
+                    font-size: 16pt;
+                    margin-left: 12px;
+                }
+                .sub{
+                    color: $main-color;
+                }
+            }
+            .state-order{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    svg{
+                        margin-left: 10px;
+                    }
+                    span{
+                        position: absolute;
+                        top: 0;
+                        right: 11px;
+                        color: $main-color;
+                        font-weight: bold;
+                    }
+                    .text{
+                        color: $bg-color;
+                        font-weight: bold;
+                        font-size: 14pt;
+                    }
+                }
+                div+div{
+                    margin-right: 20px;
+                }
+                .process{
+                    span{
+                        color: $white;
+                    }
+                }
+                .finished{
+                    span{
+                        right: 7px;
+                    }
+                }
+            }
+        }
+        .current-orders.finished-orders{
+            display: none;
+            .state-order{
+                div{
+                    .text{
+                        color: $main-color;
+                    }
+                    svg{
+                        #Path_1636{
+                            fill: $main-color !important;
+                        }
+                        #Path_1637{
+                            fill : $icon-color  !important;  
+                        }
+                    }
+                    span{
+                        color: $white !important;
+                    }
+                    .done{
+                        #Icon_material-done{
+                            fill: $white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "./vars" ;
+
+.signin.signup.info{
+    background-image: none;
+    .branch{
+        @extend %branch ; 
+        a+a{
+            &::after{
+                left: 69px !important;
+            }
+        }
+        .bar{
+            &::after{
+                left: 90px !important;
+            }
+        }
+    }
+    .show-case{
+        width: 95% !important;
+        padding: 70px 100px 100px !important;
+        .form-group{
+            width: 45%;
+            .buttons{
+                margin-top: 60px;
+            }
+            .info , .flag{
+                top: 18%;
+            }
+        }
+    }
+}
