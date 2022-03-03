@@ -5564,10 +5564,6 @@ body ul {
   font-size: 18pt !important;
 }
 
-#products .sub-nav .custom-width {
-  width: 120px;
-}
-
 #products .products {
   display: -ms-grid;
   display: grid;

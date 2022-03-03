@@ -7,7 +7,15 @@ $(function(){
         $(".sub-nav .nav-item").removeClass("sub-active") ; 
         $(this).addClass("sub-active") ; 
     })
+    let link =  $("#products .sub-nav .nav-item .nav-link");
+    for(let r = 0 ; r <link.length ; r++){
+        if(link[r].text.length<= 3){
+            $(link[r]).parentsUntil(".sub-nav").css("width" , "120px") ; 
+        }
+    }
 });
+
+
 
     // Declare all variables
     let i, tabcontent  ;
