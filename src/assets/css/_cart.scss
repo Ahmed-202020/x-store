@@ -1,5 +1,20 @@
 @import "./vars" ;
 
+.header.header-cart{
+    .navbar{
+        .navbar-collapse{
+            .min-nav{
+                .others{
+                    .cart{
+                        img{
+                            content: url("../icons/out-of-the-cart-e-commerce-interface-symbol.svg");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .process-orders.cart{
     .branch{
         a+a{

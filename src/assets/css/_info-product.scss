@@ -68,6 +68,14 @@
         }
         .col-md-4{
             #product-carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        img{
+                            min-height: 400px;
+                            max-height: 400px;
+                        }
+                    }
+                }
                 .carousel-indicators{
                     button{
                         width: 10px;
@@ -94,6 +102,7 @@
                 margin-bottom: 50px;
                 .image{
                     background-color: $bg-color;
+                    border: none;
                     border-radius: 15px;
                     -webkit-border-radius: 15px;
                     -moz-border-radius: 15px;
@@ -106,6 +115,10 @@
                     img{
                         width: 20px;
                     }
+                }
+                .value-content{
+                    width: 70%;
+                    text-align: center;
                 }
                 .add{
                     background-color: $main-color;
@@ -164,4 +177,7 @@
            
         }
     }
+}
+.add-to-cart.done{
+    
 }

@@ -7,23 +7,7 @@ $(function(){
         $(".sub-nav .nav-item").removeClass("sub-active") ; 
         $(this).addClass("sub-active") ; 
     })
-    var counter =  $(".value-content").text() ; 
-    var min = counter ; 
-    var hiddenTag = $(".hidden-tag").text() ; 
-
-    $(".add").on("click" , function(){
-        counter = +counter+ +hiddenTag ; 
-        $(".value-content").text(counter) ; 
-    });
-
-    $(".subtract").on("click" , function(){
-        if(counter > min){
-            counter = +counter- +hiddenTag ; 
-            $(".value-content").text(counter);
-        }
-    }) ;    
 });
-
 
     // Declare all variables
     let i, tabcontent  ;
@@ -42,4 +26,32 @@ $(function(){
         }
       // Show the current tab 
         document.getElementById(menuName).style.display = "grid";
+    }
+
+
+
+    // Declare all variables
+    let x , y , z , subTabcontent  ;
+    if(document.getElementsByClassName("product-details")){
+        subTabcontent = document.getElementsByClassName("product-details");
+        for (x = 0; x <  subTabcontent.length; x++) {
+            subTabcontent[x].style.display = "none";
+        }
+        // document.getElementsByClassName("default").style.display = "block";
+        subDefault = document.querySelectorAll(".sub-default") ; 
+        for (y = 0; y <  subDefault.length; y++) {
+            subDefault[y].style.display = "block";
+        }
+    }
+    function openSubMenu( subMenuName) {
+      // Get all elements with class="subTabcontent " and hide them
+        subTabcontent = document.getElementsByClassName("product-details");
+        for (x = 0; x < subTabcontent.length; x++) {
+            subTabcontent[x].style.display = "none";
+        }
+      // Show the current tab 
+        let showTab =  document.querySelectorAll(`.${subMenuName}`) ;
+        for (z = 0; z <  showTab.length; z++) {
+            showTab[z].style.display = "block";
+        }
     }

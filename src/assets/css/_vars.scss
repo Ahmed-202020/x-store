@@ -152,24 +152,24 @@ body{
 }
 %nav{
     display: flex ; 
-    align-items: center ; 
+    align-items: end;
     padding-right: 0 ;
-    width: 55%;
+    flex-wrap: wrap;
     .nav-item{
-        min-height: 80px;
-        max-height: 80px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        max-width: 280px;
-        max-height: 80px;
-        overflow-x: auto;
+        align-items: center;
+        margin-right: 20px;
+        padding-inline: 20px;
+        max-width: 260px;
+        min-height: 80px;
         background-color: $bg-color;
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
+        overflow-x: auto;
         .nav-link{
             text-align: center;
             color: $main-color ;
@@ -185,7 +185,7 @@ body{
         }
     }
     .nav-item + .nav-item{
-        margin-right: 25px
+        margin-top: 20px ;
     }
 }
 %product{
@@ -229,6 +229,7 @@ body{
             -ms-border-radius: 10px;
             -o-border-radius: 10px;
             img{
+                object-fit: scale-down;
                 width:100% ; 
                 min-height: 100%;
                 max-height: 100%;

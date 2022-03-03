@@ -15,24 +15,17 @@
     }
     .sub-nav{
         @extend %nav ; 
+        justify-content: stretch !important;
         margin-bottom: 50px ;
         margin-top: 25px;
         .nav-item{
-            min-height: 65px !important;
-            max-height: 65px !important;
-            overflow: hidden;
-            &:first-child{
-                width: 220px;
-            }
-            &:nth-child(2){
-                width: 120px;
-            }
-            &:nth-child(3){
-                width: 220px;
-            }
+            width: 220px;
             .nav-link{
                 font-size: 18pt !important;
             }
+        }    
+        .custom-width{
+            width: 120px;
         }
     }
     .products{
