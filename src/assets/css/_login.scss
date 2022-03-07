@@ -124,3 +124,140 @@
         }
     }
 }
+
+//responsive_design(rtl)
+
+
+@media (min-width: 820px) and (max-width : 821px){
+    .signin{
+        .show-case{
+            width: 100% !important;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .signin{
+        .show-case{
+            width: 100% !important;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .signin{
+        padding-inline: 25px;
+        .show-case{
+            padding-inline: 25px !important;
+        }
+    }
+}
+@media (min-width: 360px) and (max-width : 415px){
+    .signin{
+        padding-inline: 15px ;
+        .show-case{
+            .title{
+                .alert{
+                    margin-right: 20px ;
+                }
+            }
+            .form-group{
+                .info{
+                    right: 15% ;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width : 281px){
+    .signin{
+        padding-inline: 5px ;
+        .show-case{
+            padding-inline: 0 !important;
+            .title{
+                .alert{
+                    margin-right: 10px ;
+                }
+            }
+            .form-group{
+                .info{
+                    right: 15% ;
+                }
+            }
+        }
+    }
+}
+
+//ltr
+html[dir = "ltr"]{
+    .signin{
+        .show-case{
+            .alert{
+                margin-left: 35px ;
+                margin-right: 0 ;
+            }
+            .form-group{
+                .flag{
+                    left: 5% ;
+                    right: initial ;
+                    margin-right: 10px ;
+                    margin-left: 0 ;
+                }
+                .info{
+                    left: 12% ;
+                    right:  initial ;
+                }
+                .form-control{
+                    &:first-of-type{
+                        padding-left: 140px ;
+                        padding-right: 0 ;
+                    }
+                }
+                .buttons{
+                    
+                }
+            }
+        }
+    }
+}
+
+//responsive_design(ltr)
+
+@media (min-width: 360px) and (max-width : 415px){
+    html[dir = "ltr"]{
+        .signin{
+            .show-case{
+                .title{
+                    .alert{
+                        margin-left: 20px ;
+                        margin-right: 0 ;
+                    }
+                }
+                .form-group{
+                    .info{
+                        left: 15% ;
+                        right: inherit ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width : 281px){
+    html[dir = "ltr"]{
+        .signin{
+            .show-case{
+                .title{
+                    .alert{
+                        margin-left: 10px ;
+                        margin-left: 0;
+                    }
+                }
+                .form-group{
+                    .info{
+                        left: 15% ;
+                        right: inherit ;
+                    }
+                }
+            }
+        }
+    }
+}

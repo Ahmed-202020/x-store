@@ -23,3 +23,54 @@
         }
     }
 }
+
+@media(max-width : 575.98px){
+    .errors{
+        .show-case{
+            .alert{
+                font-size: 16pt;
+            }
+        }
+    }
+}
+
+@media(min-width : 280px) and (max-width : 500px){
+    .errors{
+        padding-inline: 10px ;
+        .show-case{
+            .alert{
+                padding-right: 0 ;
+                font-size: 14pt;
+            }
+            .image{
+                width: 250px ;
+            }
+        }
+    }
+}
+
+//ltr
+html[dir = "ltr"]{
+    .errors{
+        .show-case{
+            .alert{
+                padding-left: 5rem;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media(min-width : 280px) and (max-width : 500px){
+    html[dir = "ltr"]{
+        .errors{
+            .show-case{
+                .alert{
+                    padding-right: 0 ;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
