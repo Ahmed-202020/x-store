@@ -174,3 +174,261 @@
         }
     }
 }
+
+@media(max-width : 1199.98px){
+    .orders{
+        .show-case{
+            .current-orders{
+                width: 90% ;
+            }
+        }
+    }  
+}
+@media(max-width : 1024px){
+    .orders{
+        .show-case{
+            padding-inline: 40px ;
+            .current-orders{
+                width: 100% ;
+            }
+        }
+    }
+}
+@media(max-width : 768px){
+    .orders{
+        padding-inline: 20px ;
+        .show-case{
+            padding-bottom: 150px ;
+        }
+    }
+}
+@media(max-width : 575.98px){
+    .orders{
+        padding-inline: 10px ;
+        .show-case{
+            padding-inline: 20px ;
+            .title{
+                &::after{
+                    right: -7px ;
+                }
+            }
+            .active-title{
+                &::after{
+                    right: -7px ;
+                }
+            }
+            .current-orders{
+                padding: 30px !important;
+            }
+        }
+    }
+}
+@media(min-width : 280px) and(max-width : 415px){
+    .orders{
+        .show-case{
+            padding-inline: 7px ;
+            .title{
+                font-size: 13pt;
+                &::after{
+                    width: 102% ;
+                }
+            }
+            .current-orders{
+                padding: 23px !important ;
+                .info{
+                    margin-bottom: 20px ;
+                    .num-order{
+                        .tit{
+                            font-size: 12pt ;
+                            margin-left: 4px   ;
+                        }
+                        .sub{
+                            font-size: 13pt  ;
+                        }
+                    }
+                    .quantity{
+                        font-size: 12pt ;
+                        width: 60px;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+                .order-date{
+                    margin-bottom: 40px ;
+                    .tit{
+                        font-size: 12pt ;
+                        margin-left: 4px   ;
+                    }
+                    .sub{
+                        font-size: 13pt  ;
+                    }
+                }
+                .state-order{
+                    justify-content: center;
+                    flex-direction: column;
+                    div + div{
+                        margin-right: 0 ;
+                        margin-top: 20px ;
+                    }
+                    .finished{
+                        margin-left: 110px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width : 280px){
+    .orders{
+        .show-case{
+            .title{
+                font-size: 11pt ;
+                .title-curr{
+                    margin-left: 30px ;
+                }
+            }
+        }
+    }
+}
+
+//ltr 
+html[dir = "ltr"]{
+    .orders{
+        .branch{
+            a+a{
+                margin-left: 30px ;
+            }
+        }
+        .show-case{
+            .title{
+                .title-curr{
+                    margin-right: 50px ;
+                    margin-left: 0 ;
+                }
+                &::after{
+                    left: -20px ;
+                    right: initial ;
+                }
+            }
+            .current-orders{
+                .info{
+                    .num-order{
+                        .tit{
+                            margin-right: 8px ;
+                            margin-left: 0 ;
+                        }
+                    }
+                }
+                .order-date{
+                    .tit{
+                        margin-right: 12px ;
+                        margin-left: 0;
+                    }
+                }
+                .state-order{
+                    div{
+                        svg{
+                            margin-right: 10px ;
+                            margin-left: 0;
+                        }
+                        span{
+                            left: 11px ;
+                            right: initial ;
+                        }
+                    }
+                    div + div{
+                        margin-left: 20px ;
+                        margin-right: 0 ;
+                    }
+                    .finished{
+                        span{
+                            left: 7px ;
+                            right: initial ; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width : 575.98px){
+    html[dir = "ltr"]{
+        .orders{
+            .show-case{
+                .title{
+                    &::after{
+                        left: -7px ;
+                        right: initial ;
+                    }
+                }
+                .active-title{
+                    &::after{
+                        left: -7px ;
+                        right: initial ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width : 280px) and(max-width : 415px){
+    html[dir = "ltr"]{
+        .orders{
+            .show-case{
+                .current-orders{
+                    .info{
+                        .num-order{
+                            .tit{
+                                margin-right: 4px ;
+                                margin-left: 0 ;
+                            }
+                        }
+                    }
+                    .order-date{
+                        .tit{
+                            margin-right: 4px ;
+                            margin-left: 0 ;
+                        }
+                    }
+                    .state-order{
+                        div + div{
+                            margin-left: 0 ;
+                            margin-right: 0 ;
+                        }
+                        .finished{
+                            margin-right: 110px ;
+                            margin-left: 0 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width : 280px){
+    html[dir = "ltr"]{
+        .orders{
+            .branch{
+                a+a{
+                    margin-left: 18px ;
+                }
+                .bar{
+                    &::after{
+                        left: 63px  !important ;
+                    }
+                }
+            }
+            .show-case{
+                .title{
+                    .title-curr{
+                        margin-left: 0 ;
+                        margin-right: 30px ;
+                    }
+                }
+            }
+        }
+    }
+}

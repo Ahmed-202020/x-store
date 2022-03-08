@@ -29,3 +29,254 @@
         }
     }
 }
+
+@media(max-width: 1280px){
+    .signin.signup.info{
+        .show-case{
+            .form-group{
+                .form-control:nth-of-type(2){
+                    padding-right: 130px !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1199.98px){
+    .signin.signup.info{
+        .show-case{
+            .form-group{
+                .form-control:nth-of-type(2){
+                    padding-right: 125px !important;
+                }
+                .info{
+                    right: 13% ;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .signin.signup.info{
+        .show-case{
+            .form-group{
+                width: 60%;
+            }
+        }
+    }
+}
+@media(min-width : 912px) and (max-width : 913px){
+    .signin.signup.info{
+        .show-case{
+            .form-group{
+                width: 100%;
+                .info{
+                    right: 11% ;
+                }
+                .form-control:nth-of-type(2){
+                    padding-right: 140px !important;
+                }
+            }
+        }
+    }
+}
+@media(min-width : 820px) and (max-width : 821px){
+    .signin.signup.info{
+        .show-case{
+            .form-group{
+                width: 100%;
+                .info{
+                    right: 13% ;
+                }
+                .form-control:nth-of-type(2){
+                    padding-right: 140px !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .signin.signup.info{
+        .show-case{
+            .form-group{
+                width: 100%;
+                .info{
+                    right: 13% ;
+                }
+                .form-control:nth-of-type(2){
+                    padding-right: 130px !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 575.98px){
+    .signin.signup.info{
+        .show-case{
+            padding-inline: 50px !important;
+        }
+    }
+}
+@media (min-width : 360px) and (max-width: 415px){
+    .signin.signup.info{
+        .show-case{
+            padding-inline: 10px !important;
+            .form-group{
+                .info{
+                    right: 16% ;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 280px){
+    .signin.signup.info{
+        .show-case{
+            padding-inline: 10px !important;
+            .form-group{
+                .info{
+                    right: 17% ;
+                }
+                .form-control:nth-of-type(2){
+                    padding-right: 112px !important;
+                }
+            }
+        }
+    }
+}
+
+//ltr
+html[dir= "ltr"]{
+    .signin.signup.info{
+        .branch{
+            a+a{
+                margin-left: 30px;
+            }
+            .bar{
+                &::after{
+                    left: initial !important;
+                    right: -17px !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1280px){
+    html[dir = "ltr"]{
+        .signin.signup.info{
+            .show-case{
+                .form-group{
+                    .form-control:nth-of-type(2){
+                        padding-right: 0 !important;
+                        padding-left: 130px !important ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1199.98px){
+    html[dir = "ltr"]{
+        .signin.signup.info{
+            .show-case{
+                .form-group{
+                    .form-control:nth-of-type(2){
+                        padding-right: 0 !important;
+                        padding-left: 125px !important;
+                    }
+                    .info{
+                        right: initial ;
+                        left: 13% ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width : 912px) and (max-width : 913px){
+    html[dir = "ltr"]{
+        .signin.signup.info{
+            .show-case{
+                .form-group{
+                    .info{
+                        right: initial ;
+                        left: 11% ;
+                    }
+                    .form-control:nth-of-type(2){
+                        padding-right: 0 !important;
+                        padding-left: 140px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width : 820px) and (max-width : 821px){
+    html[dir = "ltr"]{
+        .signin.signup.info{
+            .show-case{
+                .form-group{
+                    .info{
+                        right: initial ;
+                        left: 13% ;
+                    }
+                    .form-control:nth-of-type(2){
+                        padding-right: 0 !important;
+                        padding-left: 140px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    html[dir = "ltr"]{
+        .signin.signup.info{
+            .show-case{
+                .form-group{
+                    .info{
+                        right: initial ;
+                        left: 13%;
+                    }
+                    .form-control:nth-of-type(2){
+                        padding-right: 0 !important;
+                        padding-left: 130px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width : 360px) and (max-width: 415px){
+    html[dir = "ltr"]{
+        .signin.signup.info{
+            .show-case{
+                .form-group{
+                    .info{
+                        right: initial ;
+                        left: 16% ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 280px){
+    html[dir = "ltr"]{
+        .signin.signup.info{
+            .show-case{
+                .form-group{
+                    .info{
+                        right: initial ;
+                        left: 17% ;
+                    }
+                    .form-control:nth-of-type(2){
+                        padding-right: 0 !important;
+                        padding-left: 112px !important;
+                    }
+                }
+            }
+        }
+    }
+}

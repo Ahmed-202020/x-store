@@ -2,7 +2,7 @@
 .process-orders{
     padding: 30px 70px 120px;
     background-color: $light-line;
-    .col-md-7{
+    .col-lg-7{
         .branch{
             @extend %branch ;
             a+a{
@@ -78,7 +78,7 @@
             }
         }
     }
-    .col-md-5{
+    .col-lg-5{
         text-align: end ;
         .status{
             margin-right: auto;
@@ -202,10 +202,242 @@
     }
 }
 .process-orders.finishid{
-    .col-md-5{
+    .col-lg-5{
         .status{
             background-color: $bg-color;
             color: $main-color;
         }
     }
 }
+
+
+
+@media(max-width : 1024px){
+    .process-orders{
+        padding-inline: 50px ;
+    }
+}
+@media(max-width : 991.98px){
+    .process-orders{
+        .col-lg-7{
+            .branch{
+                position: absolute ;
+                top: 30% ;
+                left: 50% ;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                .bar{
+                    &::after{
+                        left: 68px !important ;
+                    }
+                }
+            }
+            .notes{
+                margin-bottom: 30px ;
+            }
+            .location{
+                justify-content: center ;
+                margin-bottom: 50px ;
+            }
+        } 
+        .col-lg-5{
+            text-align: center ;
+            .status , .costs , .payment{
+                margin-inline: auto ;
+            }
+            .status{
+                margin-top: 100px ;
+            }
+            .payment{
+                margin-bottom: 60px ;
+            }
+        }
+    } 
+}
+@media(max-width : 575.98px){
+    .process-orders{
+        padding-inline: 0 ;
+        .col-lg-7{
+            .branch{
+                width: 100% ;
+                text-align: center ;
+                .bar-2{
+                    &::after{
+                        left: 63px !important ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width : 280px) and (max-width : 415px){
+    .process-orders{
+        .col-lg-7{
+            .product-details{
+                padding-left: 5px   !important ;
+                .show-case{
+                    .text{
+                        font-size: 10pt !important;
+                        margin-right: 5px !important ;
+                    }
+                }
+                .price{
+                    font-size: 12pt !important ;
+                    margin-left: 10px;
+                }
+            }
+            .notes{
+                .form-control{
+                    font-size: 12pt ;
+                }
+            }
+        }
+        .col-lg-5{
+            .status{
+                width: 100% ;
+            }
+            .costs{
+                width: 100% ;
+                .cost{
+                    font-size: 11pt ;
+                }
+            }
+        }
+    }
+}
+@media(min-width:280px) and (max-width:360px){
+    .process-orders{
+        .col-lg-7{
+            .branch{
+                top: 23% ;
+            }
+        }
+    }
+}
+
+
+//ltr 
+html[dir = "ltr"]{
+    .process-orders{
+        .col-lg-7{
+            .branch{
+                a:nth-child(3){
+                    margin-left: 30px ;
+                }
+                a+a{
+                    &:after{
+                        left: initial !important;
+                        right: -20px;
+                    }
+                }
+                .bar{
+                    &::after{
+                        left: initial !important;
+                        right: -21px;
+                    }
+                }
+            }
+            .product-details{
+                padding: 30px 30px 0 30px ;
+                .show-case{
+                    height: 70% ;
+                    .image{
+                        left: -31px ;
+                        right: initial ;
+                    }
+                    .text{
+                        margin-left: 20px ;
+                        margin-right: 0 ;
+                    }
+                }
+                .price{
+                    text-align: right ;
+                }
+            }
+            .notes{
+                .form-control{
+                    padding: 20px 20px 20px 80px ;
+                }
+                .image{
+                    left: 28px ;
+                    right: initial ;
+                    &::after{
+                        left: 36px ;
+                        right: initial ;
+                    }
+                }
+            }
+            .location{
+                .image{
+                    margin-right: 20px ;
+                    margin-left: 0 ;
+                }
+            }
+        }
+        .col-lg-5{
+            text-align: start ;
+            .status{
+                margin-left: auto ;
+                margin-right: 0 ;
+            }
+            .costs{
+                margin-left: auto ;
+                margin-right: 0 ;
+            }
+            .payment{
+                margin-left: auto ;
+                margin-right: 0 ;
+            }
+        }
+    }
+}
+
+@media(max-width : 991.98px){
+    html[dir = "ltr"]{
+        .process-orders{
+            .col-lg-7{
+                .branch{
+                    .bar-2{
+                        margin: 0;
+                    }
+                }
+            }
+            .col-lg-5{
+                .status , .costs , .payment{
+                    margin-inline: auto ;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width : 280px) and (max-width : 415px){
+    html[dir = "ltr"]{
+        .process-orders{
+            .col-lg-7{
+                .product-details{
+                    padding-right: 0 !important ;
+                    padding-left: 5px !important; 
+                    .show-case{
+                        .image{
+                            left: -12px ;
+                        }
+                        .text{
+                            margin-left: 15px !important ;
+                            margin-right: 0 !important ;
+                        }
+                    }
+                    .price{
+                        margin-right: 20px ;
+                        margin-left: 0 ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

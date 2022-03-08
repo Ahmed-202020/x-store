@@ -246,3 +246,120 @@
         }
     }
 }
+
+@media(max-width : 1024px){
+    .process-orders.cart{
+        padding-inline: 10px ;
+    }
+}
+@media(max-width : 991.98px){
+    .process-orders.cart{
+        .costs{
+            .coupon{
+                height: 400px ;
+                .form{
+                    .form-control{
+                        padding-right: 100px !important;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media(max-width : 768px){
+    .process-orders.cart{
+        .costs{
+            .coupon{
+                height: 305px ;
+            }
+        }
+        .col-lg-7{
+            .branch{
+                width: 100% ;
+                text-align: center ;
+            }
+        }
+    }
+    .button{
+        .confirm-btn{
+            width: 40% ;
+        }
+    }
+}
+
+@media(max-width : 575.98px){
+    .process-orders.cart{
+        .costs{
+            .coupon{
+                height: 222px ;
+            }
+        }
+        .col-lg-7{
+            .product-details{
+                .show-case{
+                    .text{
+                        width: 220px ;
+                        font-size: 12pt ;
+                    }
+                }
+                .price{
+                    font-size: 12pt ;
+                }
+            }
+        }
+    }
+}
+//ltr 
+
+html[dir = "ltr"]{
+    .process-orders.cart{
+        .branch{
+            a+a{
+                &::after{
+                    right: -21px ;
+                }
+            }
+            .bar{
+                &::after{
+                    right: -20px ;
+                }
+            }
+        }
+        .product-details{
+            padding: 30px ;
+        }
+        .location{
+            .address{
+                margin-right: 50px ;
+                margin-left: 0 ;
+            }
+        }
+        .costs{
+            .invoice{
+                span{
+                    margin-left: 10px ;
+                    margin-right: 0 ;
+                }
+            }
+            .coupon{
+                .title-cop{
+                    text-align: left ;
+                }
+                .form{
+                    .form-control{
+                        padding: 15px 10px 15px 70px ;  
+                    }
+                    .image{
+                        left: 12% ;
+                        right: initial ;
+                        &::after{
+                            left: 40px ;
+                            right:  initial ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

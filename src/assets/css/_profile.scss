@@ -67,3 +67,104 @@
         }
     }
 }
+
+
+@media(max-width: 1280px){
+    .t-c.profile{
+        .buttons{
+            a{
+                width: 35%;
+            }
+            a+a{
+                margin-right: 15%;
+            }
+        }
+    }
+    
+}
+@media(max-width: 991.98px){
+    .t-c.profile{
+        .buttons{
+            flex-direction: column ;
+            a{
+                width: 60%;
+            }
+            a+a{
+                margin-right: 0;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+@media(max-width: 575.98px){
+    .t-c.profile{
+        .buttons{
+            a{
+                width: 90%;
+            }
+        }
+    }
+}
+@media(max-width: 280px){
+    .t-c.profile{
+        .buttons{
+            a{
+                width: 96%;
+            }
+        }
+    }
+}
+
+//ltr
+
+html[dir = "ltr"]{
+    .t-c.profile{
+        .branch{
+            a + a{
+                &::after{
+                    right: -13px;
+                    left: initial;
+                }
+            }
+        }
+        .buttons{
+            a{
+                span{
+                    margin-left: 10px ;
+                    margin-right: 0 ;
+                }
+            }
+            a+a{
+                margin-left: 25% ;
+                margin-right: 0 ;
+            }
+        }
+    }    
+}
+
+
+@media(max-width: 1280px){
+    html[dir = "ltr"]{
+        .t-c.profile{
+            .buttons{
+                a+a{
+                    margin-right: 0 ;
+                    margin-left: 15% ;
+                }
+            }
+        }
+    }
+    
+}
+@media(max-width: 991.98px){
+    html[dir = "ltr"]{
+        .t-c.profile{
+            .buttons{
+                a+a{
+                    margin-right: 0;
+                    margin-left: 0 ;
+                }
+            }
+        }
+    }
+}
