@@ -1,5 +1,5 @@
 $(function(){
     $(".delete").on("click" , function(){
-        $(this).parentsUntil(".col-md-7").fadeOut() ; 
+        $(this).parentsUntil(".col-lg-7").fadeOut() ; 
     })
 })
